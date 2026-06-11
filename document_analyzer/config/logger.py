@@ -1,6 +1,6 @@
 import logging
 
-logger = logging.getLogger("requests")
+logger = logging.getLogger("document_analyzer")
 
 
 class DocumentAnalyzerLoggerAdapter(logging.LoggerAdapter):
