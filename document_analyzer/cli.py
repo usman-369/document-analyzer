@@ -4,11 +4,15 @@ import logging
 import argparse
 from pathlib import Path
 from typing import Optional, Dict, Any
+from importlib.metadata import version, PackageNotFoundError
 
 from .analyzers import DocumentAnalyzer, CedulaAnalyzer, PassportAnalyzer
 from .config import logger as project_logger
 
-__version__ = "0.1.0"
+try:
+    __version__ = version("document-analyzer")
+except PackageNotFoundError:
+    __version__ = "unknown"
 
 # Supported image formats
 SUPPORTED_FORMATS = {".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".gif", ".pdf"}
@@ -273,7 +277,7 @@ def create_parser() -> argparse.ArgumentParser:
     """Create and configure the argument parser."""
     parser = argparse.ArgumentParser(
         prog="document-analyzer",
-        description="Analyze Panamanian identity document (cédula) and passports",
+        description="Analyze Panamanian identity cards (cédulas) and passports using OCR.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
