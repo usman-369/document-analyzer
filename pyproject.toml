@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "document-analyzer"
+version = "0.1.0"
+description = "A Python package for extracting information from Panamanian identity document (Cédula) and Passports"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8,<=3.12"
+
+authors = [
+    { name = "Usman Ghani" }
+]
+
+dependencies = [
+    "paddleocr==3.2.0"
+]
+
+[project.scripts]
+document-analyzer = "document_analyzer.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/usman-369/document-analyzer"
+Repository = "https://github.com/usman-369/document-analyzer"
+Issues = "https://github.com/usman-369/document-analyzer/issues"
