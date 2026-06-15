@@ -4,7 +4,10 @@ Document Analyzer is a Python package for extracting structured information from
 
 ## Version
 
-Current version: **0.1.0** — Initial release.
+| Version | Notes |
+|---------|-------|
+| 0.1.1 | Python version compatibility fix (>=3.8), added package classifiers and keywords |
+| 0.1.0 | Initial release |
 
 ## Features
 
@@ -18,7 +21,7 @@ Current version: **0.1.0** — Initial release.
 
 ## Requirements
 
-- Python 3.8 to 3.12
+- Python 3.8 or higher
 - PaddleOCR 3.2.0
 
 ## Installation
