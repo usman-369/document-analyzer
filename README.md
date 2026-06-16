@@ -6,6 +6,7 @@ Document Analyzer is a Python package for extracting structured information from
 
 | Version | Notes |
 |---------|-------|
+| 0.1.2 | Fixed missing paddlepaddle dependency |
 | 0.1.1 | Python version compatibility fix (>=3.8), added package classifiers and keywords |
 | 0.1.0 | Initial release |
 
