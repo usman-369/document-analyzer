@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "document-analyzer"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Python package for extracting information from Panamanian identity document (Cédula) and Passports"
 readme = "README.md"
 license = { file = "LICENSE" }
